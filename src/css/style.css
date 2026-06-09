@@ -150,6 +150,31 @@ section h1{
 
 
 }
+.cards {
+  max-width: 450px;       /* Força o card a ter exatamente a largura máxima da imagem */
+  width: 100%;            /* Deixa o card responsivo no celular */
+  display: flex;
+  flex-direction: column; /* Alinha os itens um abaixo do outro verticalmente */
+  align-items: center;    /* Centraliza o título, imagem e texto */
+  text-align: center;     /* Garante que o texto fique centralizado */
+  background: transparent;/* Mantém o fundo limpo */
+  overflow: hidden;       /* MÁGICA 1: Corta qualquer coisa que tente passar das bordas do card */
+  box-sizing: border-box; /* Garante que margens e paddings não estufem o tamanho do card */
+}
+
+/* Controla o parágrafo da descrição para o texto nunca vazar */
+.cards p {
+  width: 100%;            /* Ocupa 100% dos 450px do card, nem um pixel a mais */
+  max-width: 100%;        /* Reforça o limite */
+  padding: 10px 15px;     /* Dá um espaço nas laterais para a letra não colar na borda */
+  font-size: 1rem;
+  line-height: 1.5;       /* Dá um respiro excelente entre as linhas lidas */
+
+  /* MÁGICA 2: Força a quebra de linha obrigatória */
+  white-space: normal;    /* Diz pro navegador: "Pode quebrar linhas normalmente" */
+  word-wrap: break-word;  /* Se tiver uma palavra gigante, ele quebra ela para não vazar */
+  overflow-wrap: break-word; /* Reforço moderno para navegadores mais novos */
+}
 
 .cta{
   height: 60vh;
@@ -225,20 +250,36 @@ section h1{
   background-color: #00c4ff;
   color: #000;
 }
-
-.Marcas{
-  margin-top: 10rem;
-  cursor: pointer;
+/* Container que segura as marcas */
+.Marcas {
+  margin-top: 5rem;
+  margin-bottom: 2rem; /* Margem extra opcional embaixo */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-wrap: wrap; /* Quebra a linha se faltar espaço na tela */
+  gap: 1.5rem; /* Espaçamento idêntico entre cada logo */
+  cursor: pointer;
+  padding: 0 10%;
 }
 
-.Marcas img{
-  width: 180px;
-  height: auto;
+/* Aplica o tamanho em TODAS as imagens (com ou sem link) */
+.Marcas img,
+.Marcas a img {
+  width: 145px;          /* Largura fixa máxima */
+  height: 140px;          /* Altura fixa máxima */
+  object-fit: contain;   /* Garante que a logo caiba inteira dentro do quadrado sem esticar */
   background-color: aliceblue;
+  padding: 10px;         /* Margem interna para dar respiro na logo */
+  border-radius: 8px;    /* Deixa os cantos levemente arredondados */
+  transition: transform 0.3s ease;
 }
 
+/* Efeito de hover idêntico para todas */
+.Marcas img:hover,
+.Marcas a img:hover {
+  transform: scale(1.1);
+}
 
 .meio-contato h3{
   color: #fff;

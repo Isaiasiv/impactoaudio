@@ -40,7 +40,7 @@
 
 /* Define a cor de fundo de cada slide */
 .slide:nth-child(1) {
-    background-image: url("../assets/img/slide/mesa.jpg");
+    background-image: url("../assets/img/slide/img6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,46 +86,60 @@
     }
 }
 @media (max-width: 700px) {
-    #slideshow {
-        overflow: hidden;
-        height: 240px;
-        width: 320px;
-        margin: 0 auto; /* Centraliza o slideshow horizontalmente */
+  /* ... (Mantenha o #slideshow, .slide, .slide-wrapper e @keyframes slide que já estão aqui) ... */
+
+  #slideshow {
+    overflow: hidden;
+    height: 240px;
+    width: 320px;
+    margin: 0 auto; /* Centraliza o slideshow horizontalmente */
+  }
+
+  /* Estilo de cada slide com largura e altura fixas */
+  .slide {
+    float: left; /* Alinha os slides à esquerda */
+    height: 240px; /* Define a altura do slide */
+    width: 320px; /* Define a largura do slide */
+  }
+
+  /* Adiciona animação aos slides */
+  .slide-wrapper {
+    /* Calcula a largura total com base no número de slides */
+    width: calc(320px * 4);
+    /* Especifica a animação com duração e velocidade */
+    animation: slide 20s ease infinite;
+  }
+
+  @keyframes slide {
+    /* Calcula a margin-left para cada slide em diferentes porcentagens de keyframes */
+    20% {
+      margin-left: 0px;
     }
 
-    /* Estilo de cada slide com largura e altura fixas */
-    .slide {
-        float: left; /* Alinha os slides à esquerda */
-        height: 240px; /* Define a altura do slide */
-        width: 320px; /* Define a largura do slide */
+    40% {
+      margin-left: calc(-320px * 1);
     }
 
-    /* Adiciona animação aos slides */
-    .slide-wrapper {
-        /* Calcula a largura total com base no número de slides */
-        width: calc(320px * 4);
-        /* Especifica a animação com duração e velocidade */
-        animation: slide 20s ease infinite;
-    }
-    @keyframes slide {
-        /* Calcula a margin-left para cada slide em diferentes porcentagens de keyframes */
-        20% {
-            margin-left: 0px;
-        }
-
-        40% {
-            margin-left: calc(-320px * 1);
-        }
-
-        60% {
-            margin-left: calc(-320px * 2);
-        }
-
-        80% {
-            margin-left: calc(-320px * 3);
-        }
+    60% {
+      margin-left: calc(-320px * 2);
     }
 
+    80% {
+      margin-left: calc(-320px * 3);
+    }
+  }
 
+  /* ---> ADICIONE ISSO AQUI <--- */
+
+  /* Reduz o espaçamento geral do texto no celular */
+  .bodyslide {
+    padding: 2%;
+    font-size: 1em; /* Reduz o tamanho base da fonte */
+  }
+
+  /* Controla especificamente o tamanho do título H1 dentro do slide */
+  .slide-number {
+    font-size: 1.5rem; /* Ajuste esse valor (1.2rem, 1.8rem) até ficar bom no celular */
+    margin-top: 30%; /* Empurra o texto um pouco para baixo para não ficar colado no topo */
+  }
 }
-
