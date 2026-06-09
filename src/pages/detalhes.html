@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/reservar.js"></script>
+  <title>Detalhes do Equipamento</title>
+</head>
+<body>
+<div id="container-detalhes" class="medidasFundo"></div>
+
+<script>
+  async function carregarProduto() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    try {
+      const resposta = await fetch('../data/dados.json');
+      const produtos = await resposta.json();
+      const produto = produtos.find(p => p.id == id);
+
+      if (produto) {
+        document.getElementById('container-detalhes').innerHTML = `
+    <div style="padding: 1rem; max-width: 1200px; margin: auto;">
+        <h1 style="text-align: center; margin-bottom: 20px; color: black;">${produto.nome}</h1>
+        <div class="detalhes-flex">
+            <div class="info-col-esquerda">
+                <img src="${produto.imagem}" class="img-detalhe" style="width:100%">
+            </div>
+            <div class="info-col-direita">
+                <p style="color: black;"><strong>Descrição:</strong><br>${produto.descricao}</p>
+                <div style="background: #eee; padding: 20px; border-radius: 10px; color: black;">
+                    <strong>Especificações Técnicas:</strong><br>${produto.detalhes}
+                </div>
+                <h2 style="color: black;">Preço: R$ ${produto.preco}</h2>
+
+                <button id="btn-reservar"
+                    style="background: #28a745; width: 100%; padding: 15px; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1rem;">
+                    RESERVAR AGORA PELO WHATSAPP
+                </button>
+
+                <a href="index.html" style="text-align: center; display: block; margin-top: 20px; color: #666;">
+                    Voltar para a lista
+                </a>
+            </div>
+        </div>
+    </div>`;
+
+        // ✅ AGORA SIM no lugar certo
+        document.getElementById('btn-reservar').addEventListener('click', () => {
+          reservar(produto.nome, produto.preco, produto.detalhes);
+        });
+      }
+    } catch (error) {
+      console.error("Erro ao carregar dados:", error);
+    }
+  }
+  carregarProduto();
+</script>
+</body>
+</html>

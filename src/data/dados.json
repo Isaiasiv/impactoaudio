@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nome": "Kit Basic (Iniciante)",
+    "descricao": "Som para eventos a partir de:",
+    "detalhes": "Inclui: 02 Caixa Ativa 12\", 02 Tripé, 02 Microfone com fio, mesa 8 ch com efeito e cabos de conexão.\n esse kit e indicado para palestras ou som ao vivo com ate 50 pessoas",
+    "preco": "350,00",
+    "imagem": "https://static.mundomax.com.br/produtos/81768/150/1.webp"
+  },
+  {
+    "id": 2,
+    "nome": "Kit Standard",
+    "descricao": "Kit evento pequeno",
+    "detalhes": "Inclui: 01 Caixa Ativa 12\" com bluetooth, 01 Tripé, 01 Microfone com fio e cabos de conexão.",
+    "preco": "400,00",
+    "imagem": "https://static.mundomax.com.br/produtos/82455/150/1.webp"
+  },
+  {
+    "id": 3,
+    "nome": "Kit Business",
+    "descricao": "Kit palestra",
+    "detalhes": "Inclui: 02 Caixa Ativa 12\" com bluetooth,02 sub de 15\", 02 Tripé, 02 Microfone com fio, mesa 16 canais e cabos de conexão.",
+    "preco": "450,00",
+    "imagem": "https://static.mundomax.com.br/produtos/81768/150/1.webp"
+  },
+  {
+    "id": 4,
+    "nome": "Kit Premium",
+    "descricao": "Kit casamento",
+    "detalhes": "Inclui: 02 Caixas Ativas 15\", 02 Subwoofers, Mesa de 12 canais, 02 Microfones sem fio e Iluminação básica.",
+    "preco": "800,00",
+    "imagem": "https://shopblob.blob.core.windows.net/1204-produtoimagem/zoom-sonorizacao+equipamentos.jpg"
+  }
+]

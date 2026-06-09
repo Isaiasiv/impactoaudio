@@ -1,0 +1,19 @@
+.medidasFundo {
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+
+  min-width: 250px;
+  max-width:80%;
+  margin: auto;
+}
+.text_center {
+  text-align: center;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.body_claro {
+  background-color: rgb(184, 16, 231);
+}
