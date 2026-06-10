@@ -25,15 +25,14 @@ img {
   color: #ffffff;
 }
 .borda_letra {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #3f3a3a;
+  text-shadow: 1px 1px 2px #3f3a3a, 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .corBlack {
-  color: black;
+  color: #65b2e6;
 }
 
 .background{
-  background-image: url(../assets/img/fundo/fundoim.jpeg);
+  background-image: url(../assets/img/fundo/impactoJulina.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -266,7 +265,7 @@ section h1{
 /* Aplica o tamanho em TODAS as imagens (com ou sem link) */
 .Marcas img,
 .Marcas a img {
-  width: 145px;          /* Largura fixa máxima */
+  width: 130px;          /* Largura fixa máxima */
   height: 140px;          /* Altura fixa máxima */
   object-fit: contain;   /* Garante que a logo caiba inteira dentro do quadrado sem esticar */
   background-color: aliceblue;

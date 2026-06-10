@@ -1,5 +1,5 @@
 function reservar(nome, preco, detalhes) {
-  const telefone = "5562986255461";
+  const telefone = "5562985784214";
   const mensagem = `Olá, gostaria de reservar um kit!
 *Produto:* ${nome}
 *Valor:* R$ ${preco}
