@@ -33,7 +33,7 @@
                 <div style="background: #eee; padding: 20px; border-radius: 10px; color: black;">
                     <strong>Especificações Técnicas:</strong><br>${produto.detalhes}
                 </div>
-                <h2 style="color: black;">Preço: R$ ${produto.preco}</h2>
+                <h2 style="color: black;">sugestão: ${produto.sugestao}</h2>
 
                 <button id="btn-reservar"
                     style="background: #28a745; width: 100%; padding: 15px; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1rem;">
@@ -49,7 +49,7 @@
 
         // ✅ AGORA SIM no lugar certo
         document.getElementById('btn-reservar').addEventListener('click', () => {
-          reservar(produto.nome, produto.preco, produto.detalhes);
+          reservar(produto.nome, produto.sugestao, produto.detalhes);
         });
       }
     } catch (error) {

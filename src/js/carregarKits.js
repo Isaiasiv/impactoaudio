@@ -17,7 +17,7 @@ async function carregarKits() {
                     <img src="${kit.imagem}" alt="${kit.nome}">
                     <h3>${kit.nome}</h3>
                     <p>${kit.descricao}</p>
-                    <h5>R$ ${kit.preco}</h5>
+                    <h5>${kit.sugestao}</h5>
                     <ion-icon name="cart-outline"></ion-icon>
                 </div>
             `;

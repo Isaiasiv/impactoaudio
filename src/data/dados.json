@@ -4,7 +4,7 @@
     "nome": "Kit Basic",
     "descricao": "Som para eventos a partir de:",
     "detalhes": "Inclui: 02 Caixas Ativas 12\", 02 Tripés, 02 Microfones com fio, mesa 8 canais com efeito e cabos de conexão.\nEsse kit é indicado para palestras, cultos religiosos ou som ao vivo com até 50 pessoas.",
-    "preco": "350,00",
+    "sugestao": "palestras",
     "imagem": "https://static.mundomax.com.br/produtos/81768/150/1.webp"
   },
   {
@@ -12,7 +12,7 @@
     "nome": "Kit Standard",
     "descricao": "Kit para evento pequeno",
     "detalhes": "Inclui: 02 Caixas Ativas 12\" com Bluetooth, 02 subs de 15\", 04 Tripés, 04 Microfones com fio ou 02 Microfones sem fio, mesa de 16 canais, 02 Par LEDs e cabos de conexão.",
-    "preco": "400,00",
+    "sugestao": "anivesarios, ao vivo",
     "imagem": "https://static.mundomax.com.br/produtos/82455/150/1.webp"
   },
   {
@@ -20,7 +20,7 @@
     "nome": "Kit Business",
     "descricao": "Kit festa",
     "detalhes": "Inclui: 02 Caixas Ativas 12\" com Bluetooth, 02 subs de 15\", 04 Tripés, 02 Microfones com fio, 02 Microfones sem fio, mesa de 16 canais, 04 Par LEDs e cabos de conexão.",
-    "preco": "450,00",
+    "sugestao": "festas",
     "imagem": "../assets/img/anucio/som Kit sub.png"
   },
   {
@@ -28,7 +28,7 @@
     "nome": "Kit Personalizado",
     "descricao": "Kit personalizável",
     "detalhes": "Você escolhe os equipamentos: caixas ativas, subs, mesa digital, Par LEDs, microfones, multicabo e tudo o que precisar.",
-    "preco": "A negociar",
+    "sugestao": "grandes eventos",
     "imagem": "../assets/img/anucio/kit pre.jpeg"
   }
 ]
