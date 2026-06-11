@@ -25,14 +25,14 @@ img {
   color: #ffffff;
 }
 .borda_letra {
-  text-shadow: 1px 1px 2px #3f3a3a, 3px 3px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 10px 5px 5px #232121, 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .corBlack {
-  color: #65b2e6;
+  color: #ffffff;
 }
 
 .background{
-  background-image: url(../assets/img/fundo/impactoJulina.png);
+  background-image: url(../assets/img/fundo/impactoJulinat.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -167,7 +167,7 @@ section h1{
   max-width: 100%;        /* Reforça o limite */
   padding: 10px 15px;     /* Dá um espaço nas laterais para a letra não colar na borda */
   font-size: 1rem;
-  line-height: 1.5;       /* Dá um respiro excelente entre as linhas lidas */
+  line-height: 1.5;       /* espaço entre as linhas lidas */
 
   /* MÁGICA 2: Força a quebra de linha obrigatória */
   white-space: normal;    /* Diz pro navegador: "Pode quebrar linhas normalmente" */
