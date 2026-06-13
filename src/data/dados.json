@@ -21,7 +21,7 @@
     "descricao": "Kit festa",
     "detalhes": "Inclui: 02 Caixas Ativas 12\" com Bluetooth, 02 subs de 15\", 04 Tripés, 02 Microfones com fio, 02 Microfones sem fio, mesa de 16 canais, 04 Par LEDs e cabos de conexão.",
     "sugestao": "festas",
-    "imagem": "../assets/img/anucio/som Kit sub.png"
+    "imagem": "src/assets/img/anucio/som Kit sub.png"
   },
   {
     "id": 4,
@@ -29,6 +29,6 @@
     "descricao": "Kit personalizável",
     "detalhes": "Você escolhe os equipamentos: caixas ativas, subs, mesa digital, Par LEDs, microfones, multicabo e tudo o que precisar.",
     "sugestao": "grandes eventos",
-    "imagem": "../assets/img/anucio/kit pre.jpeg"
+    "imagem": "src/assets/img/anucio/kit pre.jpeg"
   }
 ]

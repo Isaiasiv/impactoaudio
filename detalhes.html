@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/reservar.js"></script>
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/reservar.js"></script>
   <title>Detalhes do Equipamento</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
     const id = params.get('id');
 
     try {
-      const resposta = await fetch('../data/dados.json');
+      const resposta = await fetch('src/data/dados.json');
       const produtos = await resposta.json();
       const produto = produtos.find(p => p.id == id);
 

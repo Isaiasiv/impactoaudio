@@ -1,5 +1,5 @@
 // Carrega os dados do arquivo JSON
-fetch('../data/eventos.json')
+fetch('src/data/eventos.json')
   .then(response => response.json())
   .then(eventos => {
     const containerPrincipal = document.getElementById('lista-eventos');

@@ -1,25 +1,25 @@
 [
   {
     "titulo": "Palestras e Congressos",
-    "imagem": "../assets/img/eventos/img2.jpg",
+    "imagem": "src/assets/img/eventos/img2.jpg",
     "descricao": "Sonorização profissional com microfones de alta fidelidade e projeção clara para eventos corporativos e acadêmicos.",
     "link": "#"
   },
   {
     "titulo": "Casamentos e Recepções",
-    "imagem": "../assets/img/eventos/imgr4.jpg",
+    "imagem": "src/assets/img/eventos/imgr4.jpg",
     "descricao": "Sonorização emocionante para a cerimônia e iluminação cênica perfeita para valorizar cada momento e as fotos do grande dia.",
     "link": "#"
   },
   {
     "titulo": "Festas Temáticas e Arraiá",
-    "imagem": "../assets/img/eventos/arraia.jpg",
+    "imagem": "src/assets/img/eventos/arraia.jpg",
     "descricao": "Equipamento completo para bandas, som potente para ambientes abertos e iluminação festiva com varal de luzes.",
     "link": "#"
   },
   {
     "titulo": "Grandes Eventos e Shows",
-    "imagem": "../assets/img/eventos/img1.jpg",
+    "imagem": "src/assets/img/eventos/img1.jpg",
     "descricao": "Estrutura robusta com palcos, moving heads e sistemas de som de alta pressão para shows e pistas de dança.",
     "link": "#"
   }

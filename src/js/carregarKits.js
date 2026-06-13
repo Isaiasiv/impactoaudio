@@ -3,7 +3,7 @@ async function carregarKits() {
 
   try {
     // Busca o arquivo JSON
-    const resposta = await fetch('../data/dados.json');
+    const resposta = await fetch('src/data/dados.json');
     const kits = await resposta.json();
 
     // Limpa o container antes de carregar
